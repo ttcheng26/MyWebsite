@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alan's World~~~</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="../assets/images/my-avatar.PNG" alt="Alan Cheng" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Alan Chneg">Alan Cheng</h1>
+            <div class="title-container">
+              <p class="title">Student</p>
+              <p class="title">Engineer</p>
+            </div>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:alan870205@gmail.com" class="contact-link">alan870205@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <p class="contact-link">0932-839-617</p>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1998-02-05">Feb 5, 1998</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>New Taipei City, Taiwan</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/profile.php?id=100013161011368" class="social-link">
+              <ion-icon class = "socials-icons" name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/alanooec/?fbclid=IwY2xjawIBK6dleHRuA2FlbQIxMAABHVgLeKmzlcvNf3xoxLns80cl-CYGPa4YrlxQBrC6EOJJQe8VovC2m6U-jw_aem_mESZ_aBr6u7qblipuUQg9g" class="social-link">
+              <ion-icon class = "socials-icons" name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/ttcheng26?tab=repositories" class="social-link">
+              <ion-icon class = "socials-icons" name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi, I'm Alan ! <br>
+            我具備清晰的邏輯思維和優秀的換位思考能力，善於進行有效溝通與團隊合作，能將複雜概念簡化，讓人易於理解。
+            對工作充滿熱情，責任心強，始終以團隊和公司利益為重，努力做出最佳貢獻！
+          </p>
+
+          <p>
+            國立台北大學統計學系畢業，目前就讀台師大資訊工程研究所。
+
+            過去曾在日月光半導體擔任品保工程師，主要工作內容為控管產線生產品質、制定品質相關spec 、客戶稽核以及機器人流程自動化(RPA)製作等。在職場生活上學到很多學校不會教的東西 : 部門間的團隊合作，高層主管的思維，前輩們技術指導等，也逐漸讓我成為一個有責任心且好學的人。
+          </p>
+
+          <p>
+
+            休閒娛樂為打籃球以及羽球，平時也喜歡看電影。
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="../assets/images/student.png" alt="student icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">學生</h4>
+
+                <p class="service-item-text">
+                  實驗室主要研究領域為硬體加速器應用 / AI方面技術，論文為探討後量子密碼學，
+                  利用開源框架-Chipyard搭配FPGA開發環境，實現Sha3硬體加速器設計與部署，
+                  並探討軟硬體協同設計效能，包括對比軟體實作與硬體加速的效能表現。
+
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="../assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">網頁設計</h4>
+
+                <p class="service-item-text">
+                  利用周末時間精進網頁設計，包含HTML、CSS、JavaScript、Vue.js等技術，並將所學應用在Side Poject上。
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="../assets/images/book.png" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">VLSI課程助教</h4>
+
+                <p class="service-item-text">
+                  協助教授課程，使用硬體描述語言: VHDL / Veilog，解決授課學生遇到的問題。
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="../assets/images/tutor.png" alt="turtor icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">線上程式語言家教</h4>
+
+                <p class="service-item-text">
+                  教導國高中小孩，提供專業的程式語言教學，包含Scratch、Python、網頁設計、JavaScript、演算法等。
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+      </article>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">國立臺灣師範大學資訊工程所</h4>
+
+              <span>2023 — 2025</span>
+
+              <p class="timeline-text">
+                <br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">國立台北大學統計學系</h4>
+
+              <span>2016 — 2020</span>
+
+              <p class="timeline-text">
+                <br>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">百靈佳殷格翰-數位管理&開發實習生</h4>
+
+              <span>Jul'23 — Sep'23</span>
+
+              <p class="timeline-text">
+                負責專案-合約送簽流程自動化
+                <br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">日月光半導體-品保工程師</h4>
+
+              <span>Jan'21 — Jun'23</span>
+
+              <p class="timeline-text">
+                1. 負責產線品質管控、客戶稽核及品質樣本數制定
+                <br>
+                2. RPA技術應用
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Programming</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <p>Python、C/C++、HTML、CSS、JavaScript、VHDL/Verilog</p>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Tools</h5>
+                
+              </div>
+
+              <div class="skill-progress-bg">
+                <p>Docker、K8s、Flask、git/github、SQL、Vivado</p>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Certification</h5>
+                
+              </div>
+
+              <div class="skill-progress-bg">
+                <p>TOEIC 810分</p>
+                <p>AWS Certified Cloud Practitioner Certification</p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1075.0408963621908!2d121.51511220057004!3d25.00038290173591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9e0cbc4a319%3A0x5a9eaf762c9b89ba!2zMjM05paw5YyX5biC5rC45ZKM5Y2A5b6X5ZKM6LevMjnomZ8!5e0!3m2!1szh-TW!2stw!4v1737773725313!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input autocomplete="name">
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input autocomplete="email">
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input autocomplete="off"></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="../assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

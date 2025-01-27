@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app
+spec:
+  replicas: 2  # 部署 2 個 Flask 容器，確保高可用性
+  revisionHistoryLimit: 2 
+  selector:
+    matchLabels:
+      app: flask-app
+  template:
+    metadata:
+      labels:
+        app: flask-app
+    spec:
+      containers:
+      - name: flask-container
+        image: ttcheng26/flask-app:latest
+        ports:
+        - containerPort: 8080
