@@ -1,10 +1,8 @@
 <div align="center">
 
-# Alan's World
+# A Website : Alan's World
 
-##  這是一個利用HTML、CSS、JavaScript所打造的個人網站
-
-### <a href="https://flask-app-910273823562.asia-east1.run.app/"><strong><p style="color:blue">Live Demo</p></strong></a> 
+## <a href="https://flask-app-910273823562.asia-east1.run.app/"><strong><p style="color:blue">Live Demo</p></strong></a> 
  
 </div>
 
