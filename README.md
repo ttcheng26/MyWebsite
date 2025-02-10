@@ -2,7 +2,7 @@
 
 # A Website : Alan's World
 
-## <a href="https://flask-app-910273823562.asia-east1.run.app/"><strong><p style="color:blue">Live Demo</p></strong></a> 
+## <a href="http://35.234.44.229/"><strong><p style="color:blue">Live Demo</p></strong></a> 
  
 </div>
 
